@@ -33,3 +33,16 @@ $(document).keydown(function (e) {
     }
     e.preventDefault(); // prevent the default action (scroll / move caret)
 });
+
+function wheel($div, deltaY) {
+    var step = 280;
+    var pos = $div.scrollLeft();
+    var nextPos = pos + (step * (-deltaY))
+    console.log("DelatY: " + deltaY + ", Step: " + step + ", nextPos: " + nextPos);
+    $div.scrollLeft(nextPos);
+}
+
+$('.product-table-container').bind('mousewheel', function (event, delta, deltaX, deltaY) {
+    wheel($(this), deltaY);
+    event.preventDefault();
+});
