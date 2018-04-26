@@ -20,6 +20,7 @@
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
     "gulp-changed": "^3.2.0",
+    "gulp-check-unused-css": "^2.1.4",
     "gulp-clean": "^0.4.0",
     "gulp-concat-css": "^3.1.0",
     "gulp-csso": "^3.0.1",

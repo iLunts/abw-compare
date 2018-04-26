@@ -9,6 +9,7 @@ var csso = require('gulp-csso');
 var concatCss = require('gulp-concat-css');
 var clean = require('gulp-clean');
 var styleInject = require("gulp-style-inject");
+var checkCSS = require('gulp-check-unused-css');
 
 // ------------------
 // Path
@@ -23,6 +24,7 @@ var paths = {
     less: 'websrc/less/**/*.less',
 };
 
+
 // ------------------
 // Tasks
 // ------------------
@@ -31,6 +33,11 @@ var paths = {
 //         .pipe(clean({ force: true }))
 //         .pipe(gulp.dest('content'));
 // });
+
+gulp.task('css.check', function () {
+    return gulp.src(['styles/*.css', 'templates/*.html'])
+        .pipe(checkCSS());
+});
 
 gulp.task('css.clean', function () {
     return gulp.src([
