@@ -1,29 +1,70 @@
 .compare {
     position: relative;
     
+    // Element '.compare .compare__sticky'
     & &__sticky{
         padding: 5px 84px;
+        
+        // Element '.compare .compare__sticky-title'
+        &-title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 50px 20px 100px;
+            font-size: 14px;
+            line-height: 1;
+            color: #828282;
+            text-align: right;
+            background-color: #F2F2F2;
+            z-index: 1;
+        }
 
+        &-action{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            z-index: 100;
+        }
+
+        &-btn{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #E0E0E0;
+            margin-left: 10px;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            cursor: pointer;
+        }
+        
+        // Element '.compare .compare__sticky-body'
         &-body{
             position: relative;
             overflow-x: hidden;
         }
-
+        
+        // Element '.compare .compare__sticky-cell'
         &-cell{
             display: inline-block;
             width: 280px;
             min-width: 280px;
-
+            font-size: 14px;
+            
+            // Element '.compare .compare__sticky-cell .compare__sticky-cell--main'
             &.compare__sticky-cell--main{
                 width: 258px;
                 min-width: 258px;
             }
+            // Element '.compare .compare__sticky-cell .compare__sticky-cell--duplicate'
             &.compare__sticky-cell--duplicate{
                 position: absolute;
                 left: 0;
             }
         }
-
+        
+        // Element '.compare .compare__sticky-row'
         &-row{
             white-space: nowrap;
         }

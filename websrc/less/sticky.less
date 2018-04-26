@@ -12,13 +12,16 @@
     z-index: 100;
     padding: 10px 10px 10px 50px;
     
-    visibility: hidden;
-    opacity: 0;
-    transition: all .3s;
+    // visibility: hidden;
+    // opacity: 0;
+    transform: translateY(-100%);
+    transition: transform .3s;
     
 
     &.isSticky{
-        opacity: 1;
-        visibility: visible;
+        // opacity: 1;
+        // visibility: visible;
+        
+        transform: translateY(0);
     }
 }

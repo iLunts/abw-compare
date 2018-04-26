@@ -1,6 +1,6 @@
-
-
 var scrollStep = 280;
+// var positionBottomScroll;
+
 
 $(function () {
     $(window).scroll(function () {
@@ -13,36 +13,31 @@ $(function () {
     });
 });
 
+
 $('.product-table-container').scroll(function(){
     $(".compare__sticky-body").scrollLeft($('.product-table-container').scrollLeft());
 });
 
+
 $(document).keydown(function (e) {
     switch (e.which) {
-        case 37: // left
-        $('.product-table-container').animate({ scrollLeft: '-=280' }, 250);
-        console.log($('.product-table-container').scrollLeft());
+        case 37:
+        scrollLeft();
         break;
         
-        case 39: // right
-        $('.product-table-container').animate({ scrollLeft: '+=280' }, 250);
-        console.log($('.product-table-container').scrollLeft());
+        case 39:
+        scrollRight();
         break;
 
-        default: return; // exit this handler for other keys
+        default: return;
     }
-    e.preventDefault(); // prevent the default action (scroll / move caret)
+    e.preventDefault();
 });
 
-function wheel($div, deltaY) {
-    var step = 280;
-    var pos = $div.scrollLeft();
-    var nextPos = pos + (step * (-deltaY))
-    console.log("DelatY: " + deltaY + ", Step: " + step + ", nextPos: " + nextPos);
-    $div.scrollLeft(nextPos);
+function scrollLeft() {
+    $('.product-table-container').animate({ scrollLeft: '-=280' }, 250);
 }
 
-$('.product-table-container').bind('mousewheel', function (event, delta, deltaX, deltaY) {
-    wheel($(this), deltaY);
-    event.preventDefault();
-});
+function scrollRight() {
+    $('.product-table-container').animate({ scrollLeft: '+=280' }, 250);
+}
