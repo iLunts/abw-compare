@@ -1,0 +1,24 @@
+.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    background: #F2F2F2;
+    color: #222;
+    max-width: 1266px;
+    margin: 0 auto;
+    z-index: 100;
+    padding: 10px 10px 10px 50px;
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    
+
+    &.isSticky{
+        opacity: 1;
+        visibility: visible;
+    }
+}

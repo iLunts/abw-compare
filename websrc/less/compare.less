@@ -1,0 +1,31 @@
+.compare {
+    position: relative;
+    
+    & &__sticky{
+        padding: 5px 84px;
+
+        &-body{
+            position: relative;
+            overflow-x: scroll;
+        }
+
+        &-cell{
+            display: inline-block;
+            width: 280px;
+            min-width: 280px;
+
+            &.compare__sticky-cell--main{
+                width: 258px;
+                min-width: 258px;
+            }
+            &.compare__sticky-cell--duplicate{
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        &-row{
+            white-space: nowrap;
+        }
+    }
+}
