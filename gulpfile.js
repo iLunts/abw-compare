@@ -10,6 +10,7 @@ var concatCss = require('gulp-concat-css');
 var clean = require('gulp-clean');
 var styleInject = require("gulp-style-inject");
 var checkCSS = require('gulp-check-unused-css');
+var uncss = require('gulp-uncss');
 
 // ------------------
 // Path
@@ -35,8 +36,16 @@ var paths = {
 // });
 
 gulp.task('css.check', function () {
-    return gulp.src(['styles/*.css', 'templates/*.html'])
+    return gulp.src(['content/css/*.css', 'index.html'])
         .pipe(checkCSS());
+});
+
+gulp.task('css.unused', function () {
+    return gulp.src('content/css/site.min.css')
+        .pipe(uncss({
+            html: ['./index.html']
+        }))
+        .pipe(gulp.dest('./out'));
 });
 
 gulp.task('css.clean', function () {

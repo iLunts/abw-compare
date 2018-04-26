@@ -29,6 +29,7 @@
     "gulp-less": "^4.0.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-style-inject": "^0.1.1"
+    "gulp-style-inject": "^0.1.1",
+    "gulp-uncss": "^1.0.6"
   }
 }
