@@ -22,11 +22,11 @@ $('.product-table-container').scroll(function(){
 $(document).keydown(function (e) {
     switch (e.which) {
         case 37:
-        scrollLeft();
+        scrollContainerLeft();
         break;
         
         case 39:
-        scrollRight();
+            scrollContainerRight();
         break;
 
         default: return;
@@ -34,10 +34,10 @@ $(document).keydown(function (e) {
     e.preventDefault();
 });
 
-function scrollLeft() {
+function scrollContainerLeft() {
     $('.product-table-container').animate({ scrollLeft: '-=280' }, 250);
 }
 
-function scrollRight() {
+function scrollContainerRight() {
     $('.product-table-container').animate({ scrollLeft: '+=280' }, 250);
 }
