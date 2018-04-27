@@ -41,3 +41,17 @@ function scrollContainerLeft() {
 function scrollContainerRight() {
     $('.product-table-container').animate({ scrollLeft: '+=280' }, 250);
 }
+
+
+var collapseTableInnerText = $('.product-table__title-inner-text');
+var collapseTableGroup = $('.product-table__group');
+
+$(collapseTableInnerText).click(function () {
+
+    if ($(this).closest(collapseTableGroup).hasClass('product-table__group--collapse')){
+        $(this).closest(collapseTableGroup).removeClass('product-table__group--collapse');
+    }
+    else{
+        $(this).closest(collapseTableGroup).addClass('product-table__group--collapse');
+    }
+});

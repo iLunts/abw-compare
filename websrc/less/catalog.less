@@ -110,6 +110,40 @@
     font-size: 15px;
     table-layout: fixed;
     color: #000;
+
+    &__btn{
+        min-width: 200px;
+        justify-content: start;
+    }
+
+    &__group{
+        .product-table__title-inner-text{
+            &:after{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 10px;
+                height: 8px;
+                margin-top: -2px;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEwIDciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9IkNhbnZhcyIgZmlsbD0ibm9uZSI+PGcgaWQ9IlZlY3RvciI+PHBhdGggZD0iTSAwIDBMIDQgNEwgOCAwIiBzdHJva2Utd2lkdGg9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODQ5NjA5IDEuMDY1OCkiIHN0cm9rZT0iYmxhY2siLz48L2c+PC9nPjwvc3ZnPg==);
+                background-size: 10px;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &.product-table__group--collapse{
+            .product-table__title-inner-text{
+                &:after{
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEwIDciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9IkNhbnZhcyIgZmlsbD0ibm9uZSI+PGcgaWQ9IlZlY3RvciI+PHBhdGggZD0iTSAwIDBMIDQgNEwgOCAwIiBzdHJva2Utd2lkdGg9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDguODQ5NjEgNi4wNjU4KSBzY2FsZSgtMSkiIHN0cm9rZT0iYmxhY2siLz48L2c+PC9nPjwvc3ZnPg==);
+                }
+            }
+
+            .product-table__row{
+                display: none;
+            }
+        }
+    }
 }
 
 .product-table,
@@ -179,6 +213,13 @@
     color: #020202;
     font-size: 14px;
     font-weight: 400;
+
+    
+    z-index: 50;
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-block;
+    min-width: 240px;
 }
 
 .product-table__title.product-table__title {
@@ -598,7 +639,7 @@ tr:hover .product-table__cell_accent {
 .product-table-container_scrollable.product-table-container_product-more .product-table__title .product-table__cell:first-child {
     width: 100%;
     height: auto;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .product-table-container_scrollable.product-table-container_product-more .product-table__title-inner {
