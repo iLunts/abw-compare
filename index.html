@@ -17,6 +17,7 @@
         <div id="page">
             
             <div id="content">
+
                 <h1 class="title title--beta">Сравнение автомобилей</h1>
 
                 <div class="f--r">
@@ -326,10 +327,24 @@
                             </tr>
                             <tr class="product-table__row product-table__row_parameter">
                                 <td class="product-table__cell">
-                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                    <div class="product-table__wrapper">Цена топлива за 
+                                        <div class="product-table__input">
+                                            <input type="text" class="input input--gropdown" value="30000">
+                                        </div>
+                                         км
+
+                                        <span class="f--r" data-container="body" data-toggle="popover" data-placement="right" data-content="Введи пробег и узнайте примерную стоимость затраты на топливо за год">
+                                            <i class="icon icon--sm icon--question m--t-mini"></i>
+                                        </span>
+                                    </div>
                                 </td>
                                 <td class="product-table__cell product-table__cell_duplicate">
-                                    <!-- <span class="product-table__wrapper">Цена топлива за 300 км</span> -->
+                                    <div class="product-table__wrapper">Цена топлива за 
+                                        <div class="product-table__input">
+                                            <input type="text" class="input input--gropdown" value="30000">
+                                        </div>
+                                         км
+                                    </div>
                                 </td>
                                 <td class="product-table__cell">
                                     <span class="product-table__wrapper">
@@ -1196,5 +1211,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="content/js/scripts.js"></script>
+    <script src="content/js/popper.min.js"></script>
+    <script src="content/js/morris.min.js"></script>
 </body>
 </html>

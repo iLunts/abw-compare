@@ -11,8 +11,9 @@ $(function () {
             $("#sticky").removeClass("isSticky");
         }
     });
-});
 
+    
+});
 
 $('.product-table-container').scroll(function(){
     $(".compare__sticky-body").scrollLeft($('.product-table-container').scrollLeft());
