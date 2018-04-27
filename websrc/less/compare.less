@@ -94,12 +94,21 @@
             overflow-x: hidden;
         }
         
+        // Element '.compare .compare__sticky-close'
+        &-close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        
         // Element '.compare .compare__sticky-cell'
         &-cell{
+            position: relative;
             display: inline-block;
             width: 280px;
             min-width: 280px;
             font-size: 14px;
+            padding-left: 15px;
             
             // Element '.compare .compare__sticky-cell .compare__sticky-cell--main'
             &.compare__sticky-cell--main{
