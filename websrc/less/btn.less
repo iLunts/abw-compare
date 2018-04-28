@@ -36,6 +36,17 @@
     }
 
 
+    &&--arrow-top,
+    &&--arrow-bottom{
+        &:before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+
     &&--arrow-left,
     &&--arrow-right{
         &:before{
@@ -55,6 +66,7 @@
             margin-left: -10px;
         }
     }
+
     &&--arrow-right{
         &:before{
             border-left-color: #828282;
