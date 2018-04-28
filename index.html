@@ -20,7 +20,14 @@
 
                 <h1 class="title title--beta">Сравнение автомобилей</h1>
 
-                <div class="f--r">
+            </div>
+            
+            <div class="wrapper__year-graph">
+                <span>
+                    <i class="icon icon--sm icon--graph-blue"></i>
+                    <a href="" class="link link--dashed link--blue">Динамика цен за год</a>
+                </span>
+                <div>
                     <button class="btn btn--gray btn--square btn--arrow-left" onclick="scrollContainerLeft()"></button>
                     <button class="btn btn--gray btn--square btn--arrow-right" onclick="scrollContainerRight()"></button>
                 </div>
@@ -79,9 +86,6 @@
                         <tbody class="product-table__tbody">
                             <tr class="product-table__row product-table__row_header product-table__row_top">
                                 <th class="product-table__cell product-table__cell_small">
-                                    <p>
-                                        <i class="icon icon--sm icon--graph-blue"></i><a href="" class="link link--dashed">График изменения цены</a>
-                                    </p>
                                     <div class="m--t-sm">
                                         <a href="" class="product-table__btn btn btn--blue">
                                             <i class="btn__icon icon icon--plus-white"></i>
@@ -93,6 +97,15 @@
                                             <i class="btn__icon icon icon--cross"></i>
                                             <span class="btn__text">Очистить сравнение</span>
                                         </a>
+                                    </div>
+
+                                    <div class="checkbox m--t-xxxxlg">
+                                        <input class="checkbox__input" id="all-specification" type="checkbox">
+                                        <label class="checkbox__label" for="all-specification">Развернуть все характеристики</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" id="hide-equilse" type="checkbox">
+                                        <label class="checkbox__label" for="hide-equilse">Скрыть одинаковые параметры</label>
                                     </div>
                                 </th>
                                 <th class="product-table__cell product-table__cell_duplicate"></th>
@@ -168,7 +181,7 @@
                                         </div>
                                     </div>
                                 </th>
-                                <!-- <th class="product-table__cell">
+                                <th class="product-table__cell">
                                     <div class="product-table-cell-container">
                                         <div class="product">
                                             <a href="" class="product__fig">
@@ -239,19 +252,23 @@
                                             <a class="product__close icon icon--cross" title="Удалить"></a>
                                         </div>
                                     </div>
-                                </th> -->
+                                </th>
                             </tr>
                         </tbody>
 
                         <tbody class="product-table__group">
                             <tr class="product-table__title">
-                                <td colspan="100" class="product-table__cell">
+                                <td class="product-table__cell">
                                     <div class="product-table__title-inner">
                                         <div class="product-table__title-inner-text">Стоимость эксплуатации в год
                                         </div>
                                     </div>
                                 </td>
-                                <td class="product-table__cell product-table__cell_shadow"></td>
+                                <td class="product-table__cell product-table__cell_duplicate"></td>
+                                <td class="product-table__cell"></td>
+                                <td class="product-table__cell"></td>
+                                <td class="product-table__cell"></td>
+                                <td class="product-table__cell"></td>
                             </tr>
                             <tr class="product-table__row product-table__row_parameter">
                                 <td class="product-table__cell">
@@ -260,7 +277,6 @@
                                             <input type="text" class="input input--gropdown" value="30000">
                                         </div>
                                          км
-
                                         <span class="f--r" data-container="body" data-toggle="popover" data-placement="right" data-content="Введи пробег и узнайте примерную стоимость затраты на топливо за год">
                                             <i class="icon icon--sm icon--question m--t-mini"></i>
                                         </span>
@@ -282,19 +298,19 @@
                                 <td class="product-table__cell">
                                     <span class="value__text">1740.00 р.</span>
                                 </td>
-                                <!-- <td class="product-table__cell">
+                                <td class="product-table__cell">
                                     <span class="value__text">1740.00 р.</span>
                                 </td>
                                 <td class="product-table__cell">
                                     <span class="value__text">1740.00 р.</span>
-                                </td> -->
+                                </td>
                             </tr>
                             <tr class="product-table__row product-table__row_parameter">
                                 <td class="product-table__cell">
                                     <span class="product-table__wrapper">Обязательное страхование</span>
                                 </td>
                                 <td class="product-table__cell product-table__cell_duplicate">
-                                    <!-- <span class="product-table__wrapper">Дата выхода на рынок</span> -->
+                                    <span class="product-table__wrapper">Дата выхода на рынок</span>
                                 </td>
                                 <td class="product-table__cell">
                                     <span class="product-table__wrapper">
@@ -304,23 +320,27 @@
                                 <td class="product-table__cell">
                                     <span class="value__text">105.84 р.</span>
                                 </td>
-                                <!-- <td class="product-table__cell">
+                                <td class="product-table__cell">
                                     <span class="value__text">105.84 р.</span>
                                 </td>
                                 <td class="product-table__cell">
                                     <span class="value__text">105.84 р.</span>
-                                </td> -->
+                                </td>
                             </tr>
                         </tbody>
                         <tbody class="product-table__group">
                             <tr class="product-table__title">
-                                <td colspan="100" class="product-table__cell">
+                                <td class="product-table__cell">
                                     <div class="product-table__title-inner">
                                         <div class="product-table__title-inner-text">Стоимость эксплуатации в год
                                         </div>
                                     </div>
                                 </td>
-                                <td class="product-table__cell product-table__cell_shadow"></td>
+                                <td class="product-table__cell product-table__cell_duplicate"></td>
+                                <td class="product-table__cell"></td>
+                                <td class="product-table__cell"></td>
+                                <td class="product-table__cell"></td>
+                                <td class="product-table__cell"></td>
                             </tr>
                             <tr class="product-table__row product-table__row_parameter">
                                 <td class="product-table__cell">
@@ -337,12 +357,12 @@
                                 <td class="product-table__cell">
                                     <span class="value__text">1740.00 р.</span>
                                 </td>
-                                <!-- <td class="product-table__cell">
+                                <td class="product-table__cell">
                                     <span class="value__text">1740.00 р.</span>
                                 </td>
                                 <td class="product-table__cell">
                                     <span class="value__text">1740.00 р.</span>
-                                </td> -->
+                                </td>
                             </tr>
                             <tr class="product-table__row product-table__row_parameter">
                                 <td class="product-table__cell">
@@ -359,12 +379,12 @@
                                 <td class="product-table__cell product-table__cell--accent">
                                     <span class="value__text">105.84 р.</span>
                                 </td>
-                                <!-- <td class="product-table__cell">
+                                <td class="product-table__cell">
                                     <span class="value__text">105.84 р.</span>
                                 </td>
                                 <td class="product-table__cell">
                                     <span class="value__text">105.84 р.</span>
-                                </td> -->
+                                </td>
                             </tr>
                         </tbody>
                     </table>

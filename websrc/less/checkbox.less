@@ -1,0 +1,140 @@
+@import 'variables.less';
+// ----------------------------------------------------
+// Block '.checkbox'
+// ----------------------------------------------------
+.checkbox {
+    margin: 0;
+
+    & + &{
+        margin-top: 10px;
+    }
+
+    // --------------------------------------------------
+    // All modificators
+    // --------------------------------------------------
+
+    // Modificator '.checkbox.checkbox--sm'
+    // &&--sm{
+
+    //     & + .checkbox--sm{
+    //         margin-top: 10px;
+    //     }
+    // }
+
+    // Modificator '.checkbox.checkbox--empty'
+    // &&--empty{
+        
+    //     & .checkbox__label{
+    //         padding-left: @checkbox-height + 4;
+    //         height: @checkbox-height + 4;
+    //         display: inline-block;
+    //         vertical-align: middle;
+    //     }
+    // }
+        
+    // --------------------------------------------------
+    // All elements
+    // --------------------------------------------------
+
+    // ELement '.checkbox .checkbox__input'
+    & &__input{
+        display: none;
+        opacity: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        
+        // State '.checkbox .checkbox__input:checked'
+        &:checked {
+
+            & + .checkbox__label {
+
+                &:before {
+                    content: "";
+                    line-height: @checkbox-line-height - 4;
+                    text-align: center;
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDExIDkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9IkNhbnZhcyIgZmlsbD0ibm9uZSI+PGcgaWQ9IlZlY3RvciAyIj48cGF0aCBkPSJNIDAgMi42ODY3TCA0LjU1NTE5IDYuODEwMzRMIDkuMjMwMDkgMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4xNTQzIDAuNjYyMTA5KSIgc3Ryb2tlPSJibGFjayIvPjwvZz48L2c+PC9zdmc+);
+                    background-repeat: no-repeat;
+                    background-size: 14px;
+                    background-position: 2px 3px;
+                }
+            }
+        }
+
+        &[type='radio']{
+
+            &:checked{
+                
+                & + .checkbox__label{
+                    &:before{
+                        content: '';           
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        top: 6px;
+                        left: 6px;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 30px;
+                        background: #fff;
+                    }
+                }
+            }
+
+            & + .checkbox__label{
+                &:before{
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    // Element '.checkbox + .checkbox__label'
+    & &__label{
+        position: relative;
+        display: block;
+        cursor: pointer;
+        font-weight: 300;
+        // font-size: @checkbox-font-size;
+        font-size: 13px;
+        overflow: visible;
+        padding-left: 26px;
+        line-height: @checkbox-line-height;
+        transform: none;
+        top: 0;
+        text-transform: none;
+        color: #828282;
+        font-weight: 300;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            // top: -(@checkbox-height / 2);
+            top: 0;
+            width: @checkbox-height;
+            height: @checkbox-height;
+            border: 1px solid #cfd8dc;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+
+        &.checkbox__label--flag{
+
+            .checkbox__icon{
+                height: 17px;
+                width: 40px;
+            }
+        }
+
+        // &:not(:empty){
+        //     display: inline;
+        //     padding-left: (@checkbox-height * 1.5);
+
+        //     &:before{
+        //         top: 0;
+        //     }
+        // }
+    }
+
+}
