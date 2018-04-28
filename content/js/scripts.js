@@ -43,6 +43,17 @@ function scrollContainerRight() {
     $('.product-table-container').animate({ scrollLeft: '+=280' }, 250);
 }
 
+function scrollToTop() {
+    $(window).animate({
+        scrollTop: 0
+    }, 350);    
+}
+
+function scrollToBottom() {
+    $(window).animate({
+        scrollTop: document.body.scrollHeight
+    }, 350);    
+}
 
 var collapseTableInnerText = $('.product-table__title-inner-text');
 var collapseTableGroup = $('.product-table__group');
