@@ -25,7 +25,7 @@
             <div class="wrapper__year-graph">
                 <span>
                     <i class="icon icon--sm icon--graph-blue"></i>
-                    <a href="" class="link link--dashed link--blue">Динамика цен за год</a>
+                    <a href="#js-modal-graph" class="link link--dashed link--blue js-show-modal-graph">Динамика цен за год</a>
                 </span>
                 <div>
                     <button class="btn btn--gray btn--square btn--arrow-left" onclick="scrollContainerLeft()"></button>
@@ -570,16 +570,20 @@
 
                 </div>
             </div>
-
-
-
         </div>
     </main>
+
+    <div id="js-modal-graph" class="zoom-anim-dialog mfp-hide modal-graph">
+        <h1>Work</h1>
+        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished,
+            typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="content/js/scripts.js"></script>
     <script src="content/js/popper.min.js"></script>
     <script src="content/js/morris.min.js"></script>
+    <script src="content/js/magnific-popup.js"></script>
 </body>
 </html>
