@@ -10,9 +10,21 @@ $(function () {
         } else {
             $("#sticky").removeClass("isSticky");
         }
-    });
 
+        // Scroll to bottom end
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $("#js-scroll-to-bottom").attr("disabled", true);
+        } else {
+            $("#js-scroll-to-bottom").attr("disabled", false);
+        }
     
+        // Scroll to top end
+        if ($(window).scrollTop() == 0) {
+            $("#js-scroll-to-top").attr("disabled", true);
+        } else {
+            $("#js-scroll-to-top").attr("disabled", false);
+        }
+    });
 });
 
 $('.product-table-container').scroll(function(){
@@ -35,6 +47,9 @@ $(document).keydown(function (e) {
     e.preventDefault();
 });
 
+// ------------------------
+// Function for scrolling 
+// ------------------------
 function scrollContainerLeft() {
     $('.product-table-container').animate({ scrollLeft: '-=280' }, 250);
 }
