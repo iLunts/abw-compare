@@ -678,7 +678,7 @@ tr:hover .product-table__cell_accent {
     // min-width: 257px;
     // width: 257px
     min-width: 300px;
-    width: 300px
+    width: 300px;
 }
 
 .product-table-container_scrollable.product-table-container_product-more .product-table-bar .product-table__cell {
@@ -878,16 +878,22 @@ tr:hover .product-table__cell_accent {
             width: 100%;
         }
 
-        &__title-inner-text{
+        & &__title-inner-text{
             min-width: 170px;
-            padding: 10px 15px;
+            padding: 5px 10px;
         }
 
-        &__btn{
+        & &__btn{
             min-width: 150px;
             justify-content: center;
             font-size: 12px;
             padding: 0 5px;
+        }
+
+        & &__title{
+            .product-table__cell.product-table__cell_duplicate{
+                padding: 5px 10px !important;
+            }
         }
     }
 
@@ -904,6 +910,7 @@ tr:hover .product-table__cell_accent {
     .product-table-container_scrollable.product-table-container_product-more .product-table__cell_duplicate{
         min-width: 170px;
         width: 170px;
+        // padding: 5px 10px !important;
     }
 
     .product-table-container_scrollable.product-table-container_product-more .product-table__row_header .product-table__cell:first-child{
