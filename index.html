@@ -99,7 +99,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="checkbox m--t-xxxlg">
+                                    <div class="checkbox m--t-xxxlg m-xs--t-xlg">
                                         <input class="checkbox__input" id="all-specification" type="checkbox">
                                         <label class="checkbox__label" for="all-specification">Развернуть все характеристики</label>
                                     </div>
@@ -394,7 +394,7 @@
                                         <input class="checkbox__input" id="all-specification" type="checkbox">
                                         <label class="checkbox__label" for="all-specification">Развернуть все характеристики</label>
                                     </div>
-                                    <div class="checkbox m--b-xxxlg">
+                                    <div class="checkbox m--b-xxxlg m-xs--b-xlg">
                                         <input class="checkbox__input" id="hide-equilse" type="checkbox">
                                         <label class="checkbox__label" for="hide-equilse">Скрыть одинаковые параметры</label>
                                     </div>
@@ -574,9 +574,10 @@
     </main>
 
     <div id="js-modal-graph" class="zoom-anim-dialog mfp-hide modal-graph">
-        <h1>Work</h1>
-        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished,
-            typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
+        <h2 class="modal-graph__title">График изменения цен</h2>
+        <div class="modal-graph__content">
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -585,5 +586,7 @@
     <script src="content/js/popper.min.js"></script>
     <script src="content/js/morris.min.js"></script>
     <script src="content/js/magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="content/js/chart.js"></script>
 </body>
 </html>
