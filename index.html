@@ -605,10 +605,10 @@
                                         </a>
                                     </div>
                                     <div class="m--t-sm">
-                                        <a href="" class="product-table__btn btn btn--gray">
+                                        <button class="product-table__btn btn btn--gray" disabled>
                                             <i class="btn__icon icon icon--cross"></i>
                                             <span class="btn__text">Очистить сравнение</span>
-                                        </a>
+                                        </button>
                                     </div>
 
                                     <div class="checkbox m--t">
@@ -624,7 +624,7 @@
                             </tr>
                         </tbody>
 
-                        <tbody class="product-table__group">
+                        <tbody class="product-table__group product-table__group--collapse">
                             <tr class="product-table__title">
                                 <td class="product-table__cell">
                                     <div class="product-table__title-inner">
@@ -658,26 +658,18 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="product-table__row product-table__row_parameter">
-                                <td class="product-table__cell">
-                                    <span class="product-table__wrapper">Обязательное страхование</span>
-                                </td>
-                                <td class="product-table__cell product-table__cell_duplicate">
-                                    <span class="product-table__wrapper">Обязательное страхование</span>
-                                </td>
-                            </tr>
                         </tbody>
-                        <tbody class="product-table__group">
+                        <tbody class="product-table__group product-table__group--collapse">
                             <tr class="product-table__title">
                                 <td class="product-table__cell">
                                     <div class="product-table__title-inner">
                                         <div class="product-table__title-inner-text">
-                                            Стоимость эксплуатации в год
+                                            Основные характеристики
                                         </div>
                                     </div>
                                 </td>
                                 <td class="product-table__cell product-table__cell_duplicate">
-                                    Стоимость эксплуатации в год
+                                    Основные характеристики
                                 </td>
                             </tr>
                             <tr class="product-table__row product-table__row_parameter">
@@ -686,43 +678,117 @@
                                 </td>
                                 <td class="product-table__cell product-table__cell_duplicate">
                                     <span class="product-table__wrapper">Цена топлива за 300 км</span>
-                                </td>
-                            </tr>
-                            <tr class="product-table__row product-table__row_parameter">
-                                <td class="product-table__cell">
-                                    <span class="product-table__wrapper">Обязательное страхование</span>
-                                </td>
-                                <td class="product-table__cell product-table__cell_duplicate">
-                                    <span class="product-table__wrapper">Обязательное страхование</span>
                                 </td>
                             </tr>
                         </tbody>
-                        <tbody class="product-table__tbody">
-                            <tr class="product-table__row product-table__row_header product-table__row_bottom">
-                                <th class="product-table__cell product-table__cell_small">
-                                    <div class="checkbox m--v-sm">
-                                        <input class="checkbox__input" id="all-specification" type="checkbox">
-                                        <label class="checkbox__label" for="all-specification">Развернуть все характеристики</label>
+                        <tbody class="product-table__group product-table__group--collapse">
+                            <tr class="product-table__title">
+                                <td class="product-table__cell">
+                                    <div class="product-table__title-inner">
+                                        <div class="product-table__title-inner-text">
+                                            Эксплуатационные показатели
+                                        </div>
                                     </div>
-                                    <div class="checkbox m--b-lg m-xs--b-xlg">
-                                        <input class="checkbox__input" id="hide-equilse" type="checkbox">
-                                        <label class="checkbox__label" for="hide-equilse">Скрыть одинаковые параметры</label>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    Эксплуатационные показатели
+                                </td>
+                            </tr>
+                            <tr class="product-table__row product-table__row_parameter">
+                                <td class="product-table__cell">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody class="product-table__group product-table__group--collapse">
+                            <tr class="product-table__title">
+                                <td class="product-table__cell">
+                                    <div class="product-table__title-inner">
+                                        <div class="product-table__title-inner-text">
+                                            Комплектация
+                                        </div>
                                     </div>
-
-                                    <div class="m--t-sm">
-                                        <a href="" class="product-table__btn btn btn--blue">
-                                            <i class="btn__icon icon icon--plus-white"></i>
-                                            <span class="btn__text">Добавить к сравнению</span>
-                                        </a>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    Комплектация
+                                </td>
+                            </tr>
+                            <tr class="product-table__row product-table__row_parameter">
+                                <td class="product-table__cell">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody class="product-table__group product-table__group--collapse">
+                            <tr class="product-table__title">
+                                <td class="product-table__cell">
+                                    <div class="product-table__title-inner">
+                                        <div class="product-table__title-inner-text">
+                                            Размеры
+                                        </div>
                                     </div>
-                                    <div class="m--t-sm">
-                                        <a href="" class="product-table__btn btn btn--gray">
-                                            <i class="btn__icon icon icon--cross"></i>
-                                            <span class="btn__text">Очистить сравнение</span>
-                                        </a>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    Размеры
+                                </td>
+                            </tr>
+                            <tr class="product-table__row product-table__row_parameter">
+                                <td class="product-table__cell">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody class="product-table__group product-table__group--collapse">
+                            <tr class="product-table__title">
+                                <td class="product-table__cell">
+                                    <div class="product-table__title-inner">
+                                        <div class="product-table__title-inner-text">
+                                            Подвеска и тормоза
+                                        </div>
                                     </div>
-                                </th>
-                                <th class="product-table__cell product-table__cell_duplicate"></th>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    Подвеска и тормоза
+                                </td>
+                            </tr>
+                            <tr class="product-table__row product-table__row_parameter">
+                                <td class="product-table__cell">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody class="product-table__group product-table__group--collapse">
+                            <tr class="product-table__title">
+                                <td class="product-table__cell">
+                                    <div class="product-table__title-inner">
+                                        <div class="product-table__title-inner-text">
+                                            Разное
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    Разное
+                                </td>
+                            </tr>
+                            <tr class="product-table__row product-table__row_parameter">
+                                <td class="product-table__cell">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
+                                <td class="product-table__cell product-table__cell_duplicate">
+                                    <span class="product-table__wrapper">Цена топлива за 300 км</span>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

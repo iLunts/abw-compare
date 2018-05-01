@@ -14,8 +14,7 @@
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    -o-transition: background .1s,color .1s;
-    transition: background .1s,color .1s;
+    transition: all .2s;
     font-size: 13px;
     line-height: 38px;
     font-weight: 400;
@@ -27,8 +26,9 @@
         outline: none;
     }
 
-    &:disabled{
-        opacity: .5;
+    &:disabled,
+    &.disabled{
+        opacity: .25;
         cursor: default;
     }
     
