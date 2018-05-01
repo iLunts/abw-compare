@@ -280,7 +280,7 @@
                                             <input type="text" class="input input--gropdown" value="30000">
                                         </div>
                                          км
-                                        <span class="f--r" data-container="body" data-toggle="popover" data-placement="right" data-content="Введи пробег и узнайте примерную стоимость затраты на топливо за год">
+                                        <span id="example10treference1" class="f--r">
                                             <i class="icon icon--sm icon--question m--t-mini"></i>
                                         </span>
                                     </div>
@@ -793,10 +793,6 @@
                         </tbody>
                     </table>
 
-                    <div class="empty-table">
-                        123
-                    </div>
-
                     <div class="sticky sticky--bottom sticky--events isSticky">
                         <div class="sticky__block-top-bottom">
                             <button id="js-scroll-to-top" class="btn btn--gray btn--square btn--arrow-top-white" onclick="scrollToTop()"></button>
@@ -805,6 +801,52 @@
                     </div>
 
                 </div>
+            </div>
+            
+            <div class="empty-table">
+                <div class="empty-table__panel">
+                    <a href="" class="link link--line link--blue">Добавьте</a> несколько автомобилей к сравнению с помощью удобной формы поиска.
+                </div>
+
+                <h3 class="empty-table__title">Упростите выбор и поиск автомобиля</h3>
+
+                <ul class="list list--img">
+                    <li class="list__item">
+                        <img class="list__item-img" src="content/svg/empty-table/graph.svg" alt="">
+                        <p class="list__item-title">Изучайте график цен</p>
+                        <p class="list__item-text">
+                            Стоимость - важный фактор при выборе автомобиля. Сравнивайте и узнавайте цены за последний год, можно с помощью ссылок “Динамика
+                            цен за год” - для всех автомобилей, и “Динамика цен” - для одного.
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="content/svg/empty-table/money.svg" alt="">
+                        <p class="list__item-title">Рассчитывайте затраты на содержание</p>
+                        <p class="list__item-text">
+                            Чтобы после покупки финансы не пели романсы, учитывай минимальные расходы на содержание. Мы уже рассчитали стоимость дорожного
+                            сбора, обязательного страхования и расходы на топливо!
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="content/svg/empty-table/specification.svg" alt="">
+                        <p class="list__item-title">Узнавайте самые полные характеристики автомобиля</p>
+                        <p class="list__item-text">
+                            Технические характеристики, комплектация, размеры и все, что нужно знать о будущем любимце.
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-img" src="content/svg/empty-table/question.svg" alt="">
+                        <p class="list__item-title">Как это работает?</p>
+                        <p class="list__item-text">
+                            1. Заходите в Каталог <br>
+                            2. Добавляйте в сравнение понравившиеся автомобили с помощью иконки <img src="content/svg/empty-table/compare.svg" alt="">
+                        </p>
+                    </li>
+                </ul>
+
+                <p class="m--t-lg">
+                    <a class="btn btn--blue" href="">Перейти в каталог</a>
+                </p>
             </div>
         </div>
     </main>
@@ -819,10 +861,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="content/js/scripts.js"></script>
-    <script src="content/js/popper.min.js"></script>
-    <script src="content/js/morris.min.js"></script>
     <script src="content/js/magnific-popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     <script src="content/js/chart.js"></script>
+
+    <script src="https://unpkg.com/popper.js@^1"></script>
+    <script src="https://unpkg.com/tooltip.js@^1"></script>
 </body>
 </html>
