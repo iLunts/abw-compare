@@ -44,3 +44,43 @@
         font-weight: 400;
     }
 }
+
+
+// --------------------------------------------
+// Size: xSmall
+// --------------------------------------------
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+    .empty-table{
+        width: 180px;
+        margin-top: 80px;
+
+        & &__title{
+            margin: 30px auto;
+        }
+
+        & &__panel{
+            width: 100%;
+
+            &:before{
+                left: -20px;
+                background-size: 80px;
+                transform: rotate(20deg);
+                width: 90px;
+                height: 30px;
+            }
+        }
+
+        .list.list--img{
+
+            .list__item{
+                padding: 50px 0 0 0;
+
+                &-title{
+                    margin: 15px 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
