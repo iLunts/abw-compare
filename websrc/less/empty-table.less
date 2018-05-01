@@ -3,21 +3,36 @@
 // --------------------------------------------------------
 .empty-table{
     width: 550px;    
-    margin: 0 auto;
+    margin: 60px auto 0;
     font-size: 14px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 400;
     
     & &__panel{
+        position: relative;
         padding: 20px 15px;
         border: 1px solid #ddd;
         border-radius: 4px;
         font-size: 14px;
         line-height: 22px;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
         width: 350px;
         margin: 0 auto;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: -280px;
+            top: -40px;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYyIiBoZWlnaHQ9Ijk0IiB2aWV3Qm94PSIwIDAgMjYyIDk0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJDYW52YXMiIGZpbGw9Im5vbmUiPjxnIGlkPSJBcnJvdyAyIj48cGF0aCBkPSJNIDI1OC42NiAwLjM3OTQ3NEMgMjU4Ljg2OSAtMC4xMzE1MDEgMjU4LjYyNSAtMC43MTU2MjUgMjU4LjExNCAtMC45MjUyMDJMIDI0OS43ODcgLTQuMzQwNDdDIDI0OS4yNzYgLTQuNTUwMDUgMjQ4LjY5MiAtNC4zMDU3MiAyNDguNDgyIC0zLjc5NDc0QyAyNDguMjczIC0zLjI4Mzc3IDI0OC41MTcgLTIuNjk5NjQgMjQ5LjAyOCAtMi40OTAwN0wgMjU2LjQzIDAuNTQ1NzI4TCAyNTMuMzk0IDcuOTQ3MzVDIDI1My4xODQgOC40NTgzMiAyNTMuNDI5IDkuMDQyNDUgMjUzLjk0IDkuMjUyMDJDIDI1NC40NTEgOS40NjE2IDI1NS4wMzUgOS4yMTcyNyAyNTUuMjQ0IDguNzA2M0wgMjU4LjY2IDAuMzc5NDc0Wk0gLTAuMjg0NzY2IDE1Ljk5NDJDIDEwMC43NSA0Ni4wMDgxIDE3My4xNiAzNi40NjA0IDI1OC4xMiAwLjkyMjU0NkwgMjU3LjM0OSAtMC45MjI1NDZDIDE3Mi43NTggMzQuNDYwNSAxMDAuODIzIDQzLjk0MzUgMC4yODQ3NjYgMTQuMDc3TCAtMC4yODQ3NjYgMTUuOTk0MloiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjk3Njc5OSAtMC4yMTQxNTYgMC4yMTQxNTYgLTAuOTc2Nzk5IDI1NC4wNzEgODkuMzE0OSkiIGZpbGw9IiNEOTJGNTAiLz48L2c+PC9nPjwvc3ZnPg==);
+            // background-size: 210px;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 260px;
+            height: 65px;
+            z-index: 10;
+        }
     }
 
     & &__title{
@@ -26,6 +41,6 @@
         text-align: center;
         font-size: 18px;
         line-height: 1;
-        font-weight: 300;
+        font-weight: 400;
     }
 }

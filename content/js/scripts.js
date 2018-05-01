@@ -105,11 +105,19 @@ $(document).ready(function () {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    new Tooltip(document.getElementById("example10treference1"), {
-        placement: "right",
-        title: "Введи пробег и узнайте примерную стоимость затраты на топливо за год",
-        boundariesElement: 'body'
+// document.addEventListener('DOMContentLoaded', function () {
+//     new Tooltip(document.getElementById("example10treference1"), {
+//         placement: "right",
+//         title: "Введи пробег и узнайте примерную стоимость затраты на топливо за год",
+//         boundariesElement: 'body'
+//     });
+// });
+
+
+$(document).ready(function () {
+    $('.tooltip').tooltipster({
+        animation: 'fade',
+        trigger: 'hover',
+        side: 'right'
     });
 });
-
