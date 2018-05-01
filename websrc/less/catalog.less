@@ -590,7 +590,12 @@ tr:hover .product-table__cell_accent {
 .product-table-container {
     min-width: 1000px;
     max-width: 1400px;
-    padding: 0 20px
+    padding: 0 20px;
+
+    &.product-table-container--empty{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .product-table-container::-webkit-scrollbar {

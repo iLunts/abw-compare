@@ -591,9 +591,9 @@
             </div>
 
             <div class="catalog-wrapper catalog-wrapper_overflow-hidden">
-                <div class="product-table-container product-table-container_product-more product-table-container_scrollable">
+                <div class="product-table-container product-table-container--empty product-table-container_product-more product-table-container_scrollable">
 
-                    <table class="product-table product-table_main" id="product-table">
+                    <table class="product-table product-table_main">
 
                         <tbody class="product-table__tbody">
                             <tr class="product-table__row product-table__row_header product-table__row_top">
@@ -609,15 +609,6 @@
                                             <i class="btn__icon icon icon--cross"></i>
                                             <span class="btn__text">Очистить сравнение</span>
                                         </button>
-                                    </div>
-
-                                    <div class="checkbox m--t">
-                                        <input class="checkbox__input" id="all-specification" type="checkbox">
-                                        <label class="checkbox__label" for="all-specification">Развернуть все характеристики</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input class="checkbox__input" id="hide-equilse" type="checkbox">
-                                        <label class="checkbox__label" for="hide-equilse">Скрыть одинаковые параметры</label>
                                     </div>
                                 </th>
                                 <th class="product-table__cell product-table__cell_duplicate"></th>
@@ -793,61 +784,56 @@
                         </tbody>
                     </table>
 
-                    <div class="sticky sticky--bottom sticky--events isSticky">
-                        <div class="sticky__block-top-bottom">
-                            <button id="js-scroll-to-top" class="btn btn--gray btn--square btn--arrow-top-white" onclick="scrollToTop()"></button>
-                            <button id="js-scroll-to-bottom" class="btn btn--gray btn--square btn--arrow-bottom-white" onclick="scrollToBottom()"></button>
+
+                    <div class="empty-table">
+                        <div class="empty-table__panel">
+                            <a href="" class="link link--line link--blue">Добавьте</a> несколько автомобилей к сравнению с помощью удобной формы поиска.
                         </div>
+        
+                        <h3 class="empty-table__title">Упростите выбор и поиск автомобиля</h3>
+        
+                        <ul class="list list--img">
+                            <li class="list__item">
+                                <img class="list__item-img" src="content/svg/empty-table/graph.svg" alt="">
+                                <p class="list__item-title">Изучайте график цен</p>
+                                <p class="list__item-text">
+                                    Стоимость - важный фактор при выборе автомобиля. Сравнивайте и узнавайте цены за последний год, можно с помощью ссылок “Динамика
+                                    цен за год” - для всех автомобилей, и “Динамика цен” - для одного.
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <img class="list__item-img" src="content/svg/empty-table/money.svg" alt="">
+                                <p class="list__item-title">Рассчитывайте затраты на содержание</p>
+                                <p class="list__item-text">
+                                    Чтобы после покупки финансы не пели романсы, учитывай минимальные расходы на содержание. Мы уже рассчитали стоимость дорожного
+                                    сбора, обязательного страхования и расходы на топливо!
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <img class="list__item-img" src="content/svg/empty-table/specification.svg" alt="">
+                                <p class="list__item-title">Узнавайте самые полные характеристики автомобиля</p>
+                                <p class="list__item-text">
+                                    Технические характеристики, комплектация, размеры и все, что нужно знать о будущем любимце.
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <img class="list__item-img" src="content/svg/empty-table/question.svg" alt="">
+                                <p class="list__item-title">Как это работает?</p>
+                                <p class="list__item-text">
+                                    1. Заходите в Каталог <br>
+                                    2. Добавляйте в сравнение понравившиеся автомобили с помощью иконки <img src="content/svg/empty-table/compare.svg" alt="">
+                                </p>
+                            </li>
+                        </ul>
+        
+                        <p class="m--t-lg">
+                            <a class="btn btn--blue" href="">Перейти в каталог</a>
+                        </p>
                     </div>
 
                 </div>
             </div>
             
-            <div class="empty-table">
-                <div class="empty-table__panel">
-                    <a href="" class="link link--line link--blue">Добавьте</a> несколько автомобилей к сравнению с помощью удобной формы поиска.
-                </div>
-
-                <h3 class="empty-table__title">Упростите выбор и поиск автомобиля</h3>
-
-                <ul class="list list--img">
-                    <li class="list__item">
-                        <img class="list__item-img" src="content/svg/empty-table/graph.svg" alt="">
-                        <p class="list__item-title">Изучайте график цен</p>
-                        <p class="list__item-text">
-                            Стоимость - важный фактор при выборе автомобиля. Сравнивайте и узнавайте цены за последний год, можно с помощью ссылок “Динамика
-                            цен за год” - для всех автомобилей, и “Динамика цен” - для одного.
-                        </p>
-                    </li>
-                    <li class="list__item">
-                        <img class="list__item-img" src="content/svg/empty-table/money.svg" alt="">
-                        <p class="list__item-title">Рассчитывайте затраты на содержание</p>
-                        <p class="list__item-text">
-                            Чтобы после покупки финансы не пели романсы, учитывай минимальные расходы на содержание. Мы уже рассчитали стоимость дорожного
-                            сбора, обязательного страхования и расходы на топливо!
-                        </p>
-                    </li>
-                    <li class="list__item">
-                        <img class="list__item-img" src="content/svg/empty-table/specification.svg" alt="">
-                        <p class="list__item-title">Узнавайте самые полные характеристики автомобиля</p>
-                        <p class="list__item-text">
-                            Технические характеристики, комплектация, размеры и все, что нужно знать о будущем любимце.
-                        </p>
-                    </li>
-                    <li class="list__item">
-                        <img class="list__item-img" src="content/svg/empty-table/question.svg" alt="">
-                        <p class="list__item-title">Как это работает?</p>
-                        <p class="list__item-text">
-                            1. Заходите в Каталог <br>
-                            2. Добавляйте в сравнение понравившиеся автомобили с помощью иконки <img src="content/svg/empty-table/compare.svg" alt="">
-                        </p>
-                    </li>
-                </ul>
-
-                <p class="m--t-lg">
-                    <a class="btn btn--blue" href="">Перейти в каталог</a>
-                </p>
-            </div>
         </div>
     </main>
 
