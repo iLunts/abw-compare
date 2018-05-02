@@ -1,0 +1,79 @@
+body {
+  min-height: 100%;
+  width: 100%;
+  background-color: #ebedf2;
+  color: #444444;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  -webkit-text-size-adjust: none;
+  font-family: 'Roboto', sans-serif;
+}
+#page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 16px rgba(153, 153, 153, 0.3);
+}
+.wrapper {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1266px;
+  padding-right: 0px;
+  padding-left: 0px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 16px rgba(153, 153, 153, 0.3);
+}
+.wrapper .wrapper__year-graph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0 84px 0 390px;
+}
+#content {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 1266px;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 1096px;
+}
+.title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+  font-family: 'Roboto Slab', serif;
+}
+.title.title--beta {
+  display: inline-block;
+}
+.title.title--beta:after {
+  content: 'Beta';
+  position: absolute;
+  right: -25px;
+  top: -10px;
+  color: #D92F50;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  font-family: 'Roboto Slab', serif;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .wrapper .wrapper__year-graph {
+    margin: 0 10px;
+  }
+}
