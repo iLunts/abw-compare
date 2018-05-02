@@ -1,4 +1,4 @@
-var scrollStep = 280;
+var scrollStep = 266;
 // var positionBottomScroll;
 
 
